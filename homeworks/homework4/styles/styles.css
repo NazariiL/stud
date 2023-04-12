@@ -1,3 +1,7 @@
+:root {
+  --color-silver: #828282;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +13,7 @@ img {
 }
 
 header {
-  border-bottom: 1px solid #828282;
+  border-bottom: 1px solid var(--color-silver);
   width: 945px;
   height: 75px;
   padding-top: 25px;
@@ -33,7 +37,7 @@ li:last-child {
 }
 
 a {
-  color: #828282;
+  color: var(--color-silver);
 }
 
 .logo {
