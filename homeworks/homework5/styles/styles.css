@@ -1,0 +1,159 @@
+:root {
+  --text-color: #ffffff;
+  --main-color: #3399cc;
+  --border-color: #2b81ac;
+  --lisabon-color: #6bb7dd;
+  --paris-color: #33cccc;
+  --belgrade-color: #996699;
+  --venice-color: #c24747;
+  --telaviv-color: #e2674a;
+  --cair-color: #ffcc66;
+  --newyork-color: #99cc99;
+  --newdelhi-color: #669999;
+  --sanfrancisco-color: #cc6699;
+  --tokyo-color: #339966;
+  --sydney-color: #666699;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: var(--text-color);
+  height: 100%;
+  font-size: 22px;
+  line-height: 26px;
+}
+.app {
+  background-color: var(--main-color);
+  border: solid 25px var(--border-color);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  display: flex;
+  padding-top: 66px;
+  padding-bottom: 36px;
+}
+.header__logo {
+  display: flex;
+  margin-left: 5px;
+}
+
+.content__box {
+  width: 80%;
+  background-color: var(--text-color);
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  border: solid 2px var(--text-color);
+}
+
+.linecontent {
+  width: 100%;
+  display: flex;
+}
+
+.iconci {
+  margin-left: 10px;
+  width: 47px;
+  height: 50px;
+}
+
+.gradus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.weatherblock {
+  padding-top: 26px;
+  border: solid 2px var(--text-color);
+  justify-content: center;
+  padding-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lisabon {
+  width: 50%;
+  background-color: var(--lisabon-color);
+}
+
+.paris {
+  width: 25%;
+  background-color: var(--paris-color);
+}
+
+.belgrade {
+  width: 25%;
+  background-color: var(--belgrade-color);
+}
+
+.venice {
+  width: 25%;
+  background-color: var(--venice-color);
+}
+
+.telavive {
+  width: 25%;
+  background-color: var(--telaviv-color);
+}
+
+.cair {
+  width: 25%;
+  background-color: var(--cair-color);
+}
+
+.newyork {
+  width: 25%;
+  background-color: var(--newyork-color);
+}
+
+.newdelhi {
+  width: 25%;
+  background-color: var(--newdelhi-color);
+}
+
+.sanfrancisco {
+  width: 50%;
+  background-color: var(--sanfrancisco-color);
+}
+
+.tokyo {
+  width: 25%;
+  background-color: var(--tokyo-color);
+}
+
+.sydney {
+  width: 100%;
+  background-color: var(--sydney-color);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 80%;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 37px;
+  padding-bottom: 120px;
+}
