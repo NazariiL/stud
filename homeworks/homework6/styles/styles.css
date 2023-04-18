@@ -1,31 +1,33 @@
+@font-face {
+  font-family: "Tilt Prism";
+  src: url(/homeworks/homework6/fonts/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
 :root {
   --text-color: #ffffff;
-  --logo-color: #FF8984;
-  --lite-color: #4A4F56;
-  --bg-color: #3B3F45;
-  --container-color: #88839E;
-  --hoveractive-color: #7A7593;
-  --focus-color: #625E77; 
-
+  --logo-color: #ff8984;
+  --lite-color: #4a4f56;
+  --bg-color: #3b3f45;
+  --container-color: #88839e;
+  --hoveractive-color: #7a7593;
+  --focus-color: #625e77;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body {
   background-color: var(--bg-color);
-
 }
 
 .header {
   background-color: var(--lite-color);
 }
 
-.logo{
+.logo {
   color: var(--logo-color);
   padding-top: 19px;
   padding-bottom: 12px;
@@ -33,6 +35,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto";
+  font-weight: 700;
 }
 
 .logotext {
@@ -48,63 +52,89 @@ body {
   flex-direction: column;
   margin-top: 20px;
   color: var(--text-color);
+  background-color: var(--container-color);
 }
-
 
 label {
   display: flex;
   width: 100%;
-}
-
-.clr {
   padding: 10px;
+  padding-left: 20px;
   align-items: center;
   border-bottom: solid 2px;
   border-top: solid 2px;
   border-color: var(--container-color);
-  background-color: var(--container-color);
-  display: flex;
-  padding-left: 10px;
 }
 
 input[type="checkbox"] {
-  display: inline-block;
+  display: none;
   width: 20px;
   height: 20px;
-
 }
 
-.maintxt ,
+.maintxt,
 .ltltxt {
   padding: 10px;
   display: flex;
   align-items: center;
-
 }
 
 .maintxt {
   font-size: 25px;
   font-weight: 400;
-
 }
 
 .ltltxt {
   font-size: 18px;
-
 }
 
-.clr:hover {
-background-color: var(--hoveractive-color);
-box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-
+label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color);
+  margin-right: 10px;
 }
 
-.clr:focus {
+label:hover {
+  background-color: var(--hoveractive-color);
+  border-color: var(--hoveractive-color);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+label:focus {
   background-color: var(--focus-color);
   outline: none;
   border-bottom: 2px solid var(--text-color);
   border-top: 2px solid var(--text-color);
 }
 
-.check1 input[type="checkbox"]:checked ~ .check1 {
-  background-color: yellow; }
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  background-image: url("/homeworks/homework6/images/vector.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: var(--hoveractive-color);
+  text-decoration: line-through;
+}
+
+button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--logo-color);
+  background-color: var(--lite-color);
+  font-family: "Tilt Prism";
+  font-size: 25px;
+  font-weight: 400;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  border: none;
+}
