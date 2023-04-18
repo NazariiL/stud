@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Tilt Prism";
-  src: url(/homeworks/homework6/fonts/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
+  src: url(./homeworks/homework6/fonts/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
 }
 
 :root {
@@ -112,7 +112,7 @@ label:focus {
 
 input[type="checkbox"]:checked + label::before {
   content: "";
-  background-image: url("/homeworks/homework6/images/vector.png");
+  background-image: url("./homeworks/homework6/images/vector.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
