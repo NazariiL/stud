@@ -112,7 +112,7 @@ label:focus {
 
 input[type="checkbox"]:checked + label::before {
   content: "";
-  background-image: url ("/homeworks/homework6/images/vector.png");
+  background-image: url("/homeworks/homework6/images/vector.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
