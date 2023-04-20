@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Francois One";
-  src: url(../homeworks/homework7/fonts/FrancoisOne-Regular.ttf);
+  src: url("../homeworks/homework7/fonts/FrancoisOne-Regular.ttf");
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(../homeworks/homework7/fonts/PTSans-Regular.ttf);
+  src: url("../homeworks/homework7/fonts/PTSans-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(../homeworks/homework7/fonts/PTSans-Bold.ttf);
+  src: url("../homeworks/homework7/fonts/PTSans-Bold.ttf");
   font-weight: 700;
 }
 
@@ -159,7 +159,7 @@ sub {
   right: -132px;
   width: 760px;
   height: 760px;
-  background-image: url("../homeworks/homework7/images/shesternya.svg");
+  background-image: url("./homeworks/homework7/images/shesternya.svg");
   background-repeat: no-repeat;
   z-index: -1;
   animation: spin 8s linear infinite;
