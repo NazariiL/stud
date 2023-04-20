@@ -1,18 +1,20 @@
 @font-face {
   font-family: "Francois One";
-  src: url("../homeworks/homework7/fonts/FrancoisOne-Regular.ttf");
+  src: url(./../fonts/FrancoisOne-Regular.ttf);
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../homeworks/homework7/fonts/PTSans-Regular.ttf");
+  src: url(./../fonts/PTSans-Regular.ttf);
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../homeworks/homework7/fonts/PTSans-Bold.ttf");
+  src: url(./../fonts/PTSans-Bold.ttf);
   font-weight: 700;
+  font-style: normal;
 }
 
 :root {
@@ -154,24 +156,16 @@ sub {
 }
 
 .shestrnya {
-  position: fixed;
-  top: 131px;
-  right: -132px;
-  width: 760px;
-  height: 760px;
-  background-image: url("./homeworks/homework7/images/shesternya.svg");
-  background-repeat: no-repeat;
-  z-index: -1;
-  animation: spin 8s linear infinite;
+position: relative;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shestimg {
+  position: fixed;
+  width: 660px;
+  height: 660px;
+  z-index: -1;
+  fill: var(--siryi-color);
+  right: -50px;
 }
 
 .sidebar__li::after {
