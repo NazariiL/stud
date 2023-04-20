@@ -193,3 +193,42 @@ sub {
   width: 100%;
   right: 0;
 }
+
+.boots {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.littleboots {
+  padding-left: 20px;
+}
+
+.userslogo {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  border-top: solid 2px #C9C9C9;
+  border-bottom: solid 2px #C9C9C9;
+  margin-bottom: 60px;
+}
+
+.firstrow,
+.secondrow {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 30px;
+}
+
+.sponsors {
+  width: 220px;
+  height: 130px;
+  background-color: #C9C9C9;
+  border: solid 1px red;
+  padding: 30px;
+}
