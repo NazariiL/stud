@@ -1,24 +1,25 @@
 @font-face {
   font-family: "Francois One";
-  src: url(/homeworks/homework7/fonts/FrancoisOne-Regular.ttf);
+  src: url(./homeworks/homework7/fonts/FrancoisOne-Regular.ttf);
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(/homeworks/homework7/fonts/PTSans-Regular.ttf);
+  src: url(./homeworks/homework7/fonts/PTSans-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(/homeworks/homework7/fonts/PTSans-Bold.ttf);
+  src: url(./homeworks/homework7/fonts/PTSans-Bold.ttf);
   font-weight: 700;
 }
 
 :root {
   --text-color: #000000;
+  --white-color: #ffffff;
+  --siryi-color: #e6e6e6;
 }
-
 
 * {
   box-sizing: border-box;
@@ -43,7 +44,7 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: var(--white-color);
   z-index: 9999;
 }
 
@@ -63,7 +64,6 @@ a {
 .left__nav {
   display: flex;
   flex-direction: row;
-
 }
 
 .header__nav {
@@ -84,14 +84,7 @@ a {
   flex-direction: row;
   padding-top: 129px;
   align-items: flex-start;
-  /*position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;*/
   width: 80%;
-
 }
 
 .sidebar {
@@ -99,7 +92,6 @@ a {
   padding-top: 10px;
   position: sticky;
   top: 59px;
-  
 }
 
 .wrapper__content {
@@ -112,15 +104,15 @@ a {
   width: 100%;
   display: inline-block;
   margin-bottom: 50px;
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px var(--white-color);
   position: relative;
 }
 
 .upline {
-width: 100px;
-height: 8px;
-background-color: black;
-border-radius: 4px;
+  width: 100px;
+  height: 8px;
+  background-color: var(--text-color);
+  border-radius: 4px;
 }
 
 .maintxt {
@@ -137,7 +129,7 @@ p {
   font-style: normal;
   font-size: 22px;
   line-height: 33px;
-  font-family: "PT Sans"
+  font-family: "PT Sans";
 }
 
 .spacetxt {
@@ -145,7 +137,7 @@ p {
 }
 
 .pzdc {
-  background-color: #DADADA;
+  background-color: #dadada;
 }
 
 sub {
@@ -167,25 +159,29 @@ sub {
   right: -132px;
   width: 760px;
   height: 760px;
-  background-image: url("/homeworks/homework7/images/shesternya.svg");
+  background-image: url("./homeworks/homework7/images/shesternya.svg");
   background-repeat: no-repeat;
   z-index: -1;
   animation: spin 8s linear infinite;
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .sidebar__li::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 100%;
   width: 0;
   height: 2px;
-  background-color: #C9C9C9;
+  background-color: var(--siryi-color);
   transition: width 0.8s ease-in-out, right 0.8s ease-in-out;
 }
 
@@ -212,8 +208,8 @@ sub {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  border-top: solid 2px #C9C9C9;
-  border-bottom: solid 2px #C9C9C9;
+  border-top: solid 2px var(--siryi-color);
+  border-bottom: solid 2px var(--siryi-color);
   margin-bottom: 60px;
 }
 
@@ -222,13 +218,91 @@ sub {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding: 30px;
+  padding: 10px;
 }
 
 .sponsors {
-  width: 220px;
+  max-width: 270px;
   height: 130px;
-  background-color: #C9C9C9;
-  border: solid 1px red;
-  padding: 30px;
+  margin: 10px;
+  background-color: var(--siryi-color);
+  display: flex;
+}
+
+.logosvg {
+  min-width: 240px;
+  fill: var(--text-color);
+}
+
+.logosvg:hover {
+  fill: var(--siryi-color);
+}
+
+.skype:hover .skype__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
+}
+
+.shopify__logo,
+#sumka {
+  fill: var(--text-color);
+}
+
+#bukva {
+  fill: var(--white-color);
+}
+
+.shopify:hover .shopify__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
+}
+
+.shopify:hover #sumka {
+  fill: var(--white-color);
+}
+
+.shopify:hover #bukva {
+  fill: var(--text-color);
+}
+
+.instagram:hover .instagram__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
+}
+
+.facebook:hover .facebook__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
+}
+
+.pinterest:hover .pinterest__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
+}
+
+.pinterest:hover #bukva {
+  fill: var(--text-color);
+}
+
+.wix:hover .wix__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
+}
+
+.wix:hover #bukva {
+  fill: var(--text-color);
+}
+
+.salesforce:hover .salesforce__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
+}
+
+.salesforce:hover #bukva {
+  fill: var(--text-color);
+}
+
+.soundcloud:hover .soundcloud__logo {
+  background-color: var(--text-color);
+  fill: var(--white-color);
 }
