@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Francois One";
+  src: url(/homeworks/homework7/fonts/FrancoisOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(/homeworks/homework7/fonts/PTSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(/homeworks/homework7/fonts/PTSans-Bold.ttf);
+  font-weight: 700;
+}
+
+:root {
+  --text-color: #000000;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+.header__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 240px;
+}
+
+.left__nav {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.header__nav {
+  padding-left: 40px;
+}
+
+.upper__li {
+  display: inline-block;
+  font-family: "Francois One";
+  text-transform: uppercase;
+}
+
+/* MAIN */
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 129px;
+  align-items: flex-start;
+  /*position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;*/
+  width: 80%;
+
+}
+
+.sidebar {
+  width: 35%;
+  padding-top: 10px;
+  position: sticky;
+  top: 59px;
+  
+}
+
+.wrapper__content {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__li {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 50px;
+  border-bottom: solid 2px white;
+  position: relative;
+}
+
+.upline {
+width: 100px;
+height: 8px;
+background-color: black;
+border-radius: 4px;
+}
+
+.maintxt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  text-transform: uppercase;
+  font-family: "Francois One";
+}
+
+p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: "PT Sans"
+}
+
+.spacetxt {
+  padding-top: 25px;
+}
+
+.pzdc {
+  background-color: #DADADA;
+}
+
+sub {
+  padding-left: 10px;
+}
+
+.intro {
+  display: flex;
+  padding-bottom: 35px;
+}
+
+.wrapper__content1 {
+  margin-bottom: 70px;
+}
+
+.shestrnya {
+  position: fixed;
+  top: 131px;
+  right: -132px;
+  width: 760px;
+  height: 760px;
+  background-image: url("/homeworks/homework7/images/shesternya.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.sidebar__li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #C9C9C9;
+  transition: width 0.8s ease-in-out, right 0.8s ease-in-out;
+}
+
+.sidebar__li:hover:after {
+  width: 100%;
+  right: 0;
+}

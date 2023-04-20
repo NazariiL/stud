@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Documentation</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="left__nav">
+            <div class="englng">ENG</div>
+            <div class="header__nav">
+              <nav>
+                <ul>
+                  <li class="upper__li"><a href="#docu">documentation</a></li>
+                  <li class="upper__li">/</li>
+                  <li class="upper__li"><a href="#">who`s using</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+        </div>
+      </header>
+      <div class="shestrnya"></div>
+      <div class="wrapper" id="docu">
+        <div class="sidebar">
+          <nav>
+            <ul>
+              <li class="sidebar__li maintxt">
+                <a href="#introduction">introduction</a>
+              </li>
+              <li class="sidebar__li maintxt">
+                <a href="#core">core components</a>
+              </li>
+              <li class="sidebar__li maintxt">
+                <a href="#react">react fundamentals</a>
+              </li>
+              <li class="sidebar__li maintxt">
+                <a href="#handling">handling text input</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="wrapper__content">
+          <div class="wrapper__content1">
+            <div class="upline"></div>
+            <div class="intro">
+              <div class="maintxt" id="introduction">introduction</div>
+              <div><sub>Chapter1</sub></div>
+            </div>
+            <div class="txt">
+              <p>
+                Welcome to the very start of your React Native journey! If
+                you're looking for environment setup instructions, they've moved
+                to <u>their own section</u>. Continue reading for an
+                introduction to the documentation, Native Components, React, and
+                more!
+              </p>
+            </div>
+          </div>
+          <div class="wrapper__content1">
+            <div class="upline"></div>
+            <div class="intro">
+              <div class="maintxt" id="core">core components</div>
+              <div><sub>Chapter2</sub></div>
+            </div>
+            <div class="txt">
+              <p>
+                React Native is an open source framework for building Android
+                and iOS applications using React and the app platform’s native
+                capabiles. With React Native, you use JavaScript to access your
+                platform’s APIs as well as to describe the appearance and
+                behavior of your UI using React components:
+                <em>bundles of reusable, nestable code</em>. You can learn more
+                about React in the next section. But first, let’s cover how
+                components work in React Native.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper__content1">
+            <div class="upline"></div>
+            <div class="intro">
+              <div class="maintxt" id="react">react fundamentals</div>
+              <div><sub>Chapter3</sub></div>
+            </div>
+            <div class="txt">
+              <p>
+                React Native runs on <u>React</u>, a popular open source library
+                for building user interfaces with JavaScript. To make the most
+                of React Native, it helps to understand React itself. This
+                section can get you started or can serve as a refresher course.
+              </p>
+              <div class="spacetxt">
+                <p>We’re going to cover the core concepts behind React:</p>
+              </div>
+              <div class="spacetxt">
+                <p>
+                  <strong>+ components.</strong> The rest of this introduction
+                  to React uses cats in its examples: friendly, approachable
+                  creatures that need names and a cafe to work in.
+                </p>
+              </div>
+              <div class="spacetxt">
+                <p>
+                  <strong>+ JSX.</strong> React and React Native use JSX, a
+                  syntax that lets you write elements inside JavaScript like so:
+                </p>
+                <p>
+                  <span class="pzdc"
+                    >&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</span
+                  >.
+                </p>
+                <div class="spacetxt">
+                  <p>
+                    The React docs have <u>a comprehensive guide to JSX</u> you
+                    can refer to learn even more. Because JSX is JavaScript, you
+                    can use variables inside it. Here you are declaring a
+                    <span class="pzdc">name</span>for the cat, name, and
+                    embedding it with curly braces inside<span class="pzdc"
+                      >&lt;Text&gt;</span
+                    >
+                  </p>
+                </div>
+                <div class="spacetxt">
+                  <p>
+                    <strong>+ props.</strong> Props is short for “properties”.
+                  </p>
+                </div>
+                <div class="spacetxt">
+                  <p>
+                    <strong>+ state.</strong> While you can think of props as
+                    arguments you use to configure how components render, state
+                    is like a component’s personal data storage. State is useful
+                    for handling data that changes over time or that comes from
+                    user interaction. State gives your components memory!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper__content1">
+            <div class="upline"></div>
+            <div class="intro">
+              <div class="maintxt" id="handling">handling text input</div>
+              <div><sub>Chapter4</sub></div>
+            </div>
+            <div class="txt">
+              <p>
+                TextInput is a Core Component that allows the user to enter
+                text. It has an <em>onChangeText</em> prop that takes a function
+                to be called every time the text changed, and an onSubmitEditing
+                prop that takes a function to be called when the text is
+                submitted.
+              </p>
+            </div>
+            <div class="spacetxt">
+              <p>
+                For example, let's say that as the user types, you're
+                translating their words into a different language. In this new
+                language, every single word is written the same way: 🍕. So the
+                sentence "Hello there Bob" would be translated as "🍕 🍕".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
