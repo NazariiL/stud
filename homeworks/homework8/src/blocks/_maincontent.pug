@@ -1,0 +1,21 @@
+mixin maincontent
+  .conteiner
+    .photo
+      img(src='./assets/images/'+mainimg alt='#')
+      .photo__top-left
+      .photo__top-right
+      .photo__bot-left
+      .photo__bot-right
+    .info
+      .info__title #{nameblog}
+      .info__first-decoartion
+      .info__about #{aboutblog}
+      .info__social
+        img(src='./assets/images/facebook.jpg' alt='#')
+        img(src='./assets/images/twitter.jpg' alt='#')
+        img(src='./assets/images/google+.jpg' alt='#')
+        img(src='./assets/images/linkedin.jpg' alt='#')
+      .info__main-text #{maintext}
+      .info__second-decoration
+        img(src='./assets/images/decore.jpg' alt='#')
+      button.info__button view profile
